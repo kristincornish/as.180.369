@@ -1,0 +1,42 @@
+Methodology
+Research Design
+This study employs a quantitative research design to investigate the relationship between socioeconomic factors and the incidence of school shootings in the United States. By analyzing data on various socioeconomic indicators, such as income inequality, unemployment rates, and school conditions, the research aims to elucidate how these factors contribute to the prevalence of gun-related violence in schools. A logistic regression model is utilized to assess the impact of these variables on the likelihood of school shootings.
+
+Data Sources
+The analysis draws on a curated dataset assembled from multiple sources, including academic literature, government reports, and nonprofit organizations. Key data sources include:
+
+Pah et al. (2017): A comprehensive dataset covering gun violence incidents in U.S. schools from 1990 to 2013, with a focus on socioeconomic indicators.
+Kaiser (2006): Data on school size and incidents of school shootings, emphasizing the social dynamics within large school environments.
+Roemer (2023): Information on donations to the National Rifle Association (NRA) following school shootings, providing insights into the political response to gun violence.
+Sommer (2014): A systematic review of the social dynamics involved in the development of school shootings, highlighting factors such as bullying and conflicts with teachers.
+Variables
+The study utilizes the following key variables:
+
+Dependent Variable:
+
+School Shootings: A binary variable indicating whether a school shooting occurred (1) or not (0).
+Independent Variables:
+
+School Size: Continuous variable representing the number of students enrolled in the school.
+Unemployment Rate: Continuous variable indicating the unemployment rate within the school's geographic area.
+Peer Rejection: Binary variable indicating whether students reported experiences of peer rejection (1) or not (0).
+Teacher Conflicts: Binary variable indicating whether conflicts with teachers were reported (1) or not (0).
+NRA Donations: Continuous variable representing the amount of donations received by the NRA in the aftermath of school shootings.
+Analytical Methods
+The analysis employs a logistic regression model to explore the relationships between the independent variables and the likelihood of school shootings. This method is particularly suitable for binary outcomes, allowing for the assessment of how changes in independent variables affect the probability of a school shooting occurring.
+
+The logistic regression model is specified as follows:
+
+Logic
+(𝑃(𝑌=1))=𝛽0+𝛽1×
+School Size + 𝛽2× Unemployment Rate+ 𝛽3×Peer Rejection +𝛽4×Teacher Conflicts+𝛽5×NRA DonationsLogit(P(Y=1))=β 0+β 1×School Size+β 2×Unemployment Rate+β 3×Peer Rejection+β 4​×Teacher Conflicts+β 5 ×NRA Donations
+Where:(𝑃(𝑌=1))
+P(Y=1) is the probability of a school shooting occurring.
+Is the intercept, and 
+𝛽1,𝛽2,𝛽3,𝛽4,𝛽5β 1,β 2,β 3 ,β 
+4,β 5
+​Are the coefficients for the independent variables.
+The model will be fitted using the statsmodels library in Python, and results will be interpreted based on the estimated coefficients, standard errors, p-values, and confidence intervals.
+
+Ethical Considerations
+This research adheres to ethical standards in data collection and analysis. All data utilized in this study is obtained from publicly available sources or academic publications, ensuring that individual privacy and confidentiality are maintained. The findings will be presented in an objective manner, focusing on the systemic issues underlying school shootings rather than attributing blame to specific individuals or groups.
